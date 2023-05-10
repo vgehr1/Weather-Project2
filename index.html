@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bc20d5ea06.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <h1 class="city">Brooklyn</h1>
+          <div class="card">
+            <div class="card-body">
+              <div class="temp">
+                <span id="temp">9℃</span>
+
+                <i class="fa-solid fa-cloud-sun main"></i>
+              </div>
+              <div class="tempInfo">Precipitation 4%</div>
+              <div class="tempInfo">Humidity 46%</div>
+              <div class="tempInfo">Wind 0 km/h</div>
+            </div>
+          </div>
+          <h2>Weather</h2>
+          <div class="info" id="show-time">Saturday 22:00</div>
+          <div class="info">Clear with Periodic Cloud</div>
+          <form id="search-form">
+            <input
+              type="tex"
+              placeholder="Enter City Name"
+              autofocus
+              class="enter"
+              id="city-enter"
+            />
+            <input type="submit" value="Search" class="button" />
+          </form>
+        </div>
+
+        <div class="col-2">
+          <ul>
+            <li>
+              Sunday
+
+              <div class="forcast">35° 40°</div>
+            </li>
+            <li>
+              Monday
+
+              <div class="forcast">52° 35°</div>
+            </li>
+            <li>
+              Tuesday
+              <div class="forcast">63° 64°</div>
+            </li>
+            <li>
+              Wednesday
+
+              <div class="forcast">26° 75°</div>
+            </li>
+            <li>
+              Thursday
+
+              <div class="forcast">64° 75°</div>
+            </li>
+            <li>
+              Friday
+
+              <div class="forcast">75° 46°</div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li>
+              <i class="fa-solid fa-cloud-rain"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-sun"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-cloud-rain"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-sun"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-cloud-sun"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-sun"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
